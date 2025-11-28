@@ -27,9 +27,6 @@ GET /usage/parse          -> Parses usage.csv and returns items
 GET /inventory/parse      -> Parses inventory.json and returns items
 GET /reconcile/report     -> Generates reconcile report using all data
 
-Tests:
-------
-npm test                  -> Validates all endpoints using Jest & Supertest
 
 Notes:
 ------
@@ -39,4 +36,7 @@ Notes:
     data: Array<any>,
     message?: string
   }
-- Refer to TestEndpoints.test.ts to run basic tests to test the APIs
+  Tests:
+  ------
+  npm test -> Validates all endpoints using Jest & Supertest
+  Refer to TestEndpoints.test.ts to run basic tests to test the APIs
