@@ -1,6 +1,6 @@
 import InventoryService from "./InventoryService";
-import { InventoryItem } from "./InventoryDto";
-import { GENERIC_ERRORS } from "../../GenericConstants";
+import {InventoryItem} from "./InventoryDto";
+import {GENERIC_ERRORS} from "../../GenericConstants";
 
 export default class InventoryController {
   private service: InventoryService;

@@ -1,6 +1,6 @@
 import DeliveryDetailsService from "./DeliveryDetailsService";
-import { DeliveryItem } from "./DeliveryDto";
-import { GENERIC_ERRORS } from "../../GenericConstants";
+import {DeliveryItem} from "./DeliveryDto";
+import {GENERIC_ERRORS} from "../../GenericConstants";
 
 export default class DeliveryController {
   private service: DeliveryDetailsService;

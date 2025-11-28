@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
-import { InventoryItem } from "./InventoryDto";
-import { GENERIC_ERRORS } from "../../GenericConstants";
+import {InventoryItem} from "./InventoryDto";
+import {GENERIC_ERRORS} from "../../GenericConstants";
 
 export default class InventoryService {
   private filePath: string;

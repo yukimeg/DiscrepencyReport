@@ -1,6 +1,6 @@
 import UsageService from "./UsageService";
-import { UsageItem } from "./UsageDto";
-import { GENERIC_ERRORS } from "../../GenericConstants";
+import {UsageItem} from "./UsageDto";
+import {GENERIC_ERRORS} from "../../GenericConstants";
 
 export default class UsageController {
   private service: UsageService;

@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { UsageItem } from "./UsageDto";
+import {UsageItem} from "./UsageDto";
 
 export default class UsageService {
   private filePath: string;

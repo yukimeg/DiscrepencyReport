@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { DeliveryItem } from "./DeliveryDto";
+import {DeliveryItem} from "./DeliveryDto";
 
 export default class DeliveryDetailsService {
   private filePath: string;
