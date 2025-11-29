@@ -12,11 +12,13 @@ export default class DeliveryDetailsService {
 
   parseDelivery(): DeliveryItem[] {
     const content = fs.readFileSync(this.filePath, "utf-8");
-    const lines = content.split("\n").filter(Boolean);
+        
+    // Split file by line breaks and remove any empty lines.
+    const lines = content.split("\n").filter(line => line.trim() !== "");
 
     return lines
       .map(line => {
-        const [key, rawValue] = line.split("=");
+        const [key, rawValue] = line.split("="); // split "itemName = quantity"
         if (!key) return null;
         const quantity = rawValue ? parseInt(rawValue.replace(/["']/g, "").trim(), 10) : 0;
         return { item: key.trim(), quantity };

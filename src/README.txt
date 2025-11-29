@@ -27,16 +27,7 @@ GET /usage/parse          -> Parses usage.csv and returns items
 GET /inventory/parse      -> Parses inventory.json and returns items
 GET /reconcile/report     -> Generates reconcile report using all data
 
-
-Notes:
-------
-- Ultimately, services should return json response in the format:
-  {
-    ok: boolean,
-    data: Array<any>,
-    message?: string
-  }
   Tests:
   ------
   npm test -> Validates all endpoints using Jest & Supertest
-  Refer to TestEndpoints.test.ts to run basic tests to test the APIs
+  Refer to TestEndpoints.test.ts for test cases
