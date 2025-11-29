@@ -36,6 +36,7 @@ export default class ReconcileService {
       } else if (actualQty !== expectedQty) {
         status = "DISCREPANCY";
         discrepancy = actualQty - expectedQty;
+        console.log(status, discrepancy);
       }
 
       result.push({
