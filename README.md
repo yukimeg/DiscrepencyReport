@@ -27,6 +27,8 @@ GET /usage/parse          -> Parses usage.csv and returns items
 GET /inventory/parse      -> Parses inventory.json and returns items
 GET /reconcile/report     -> Generates reconcile report using all data
 
+Note: Refer to Banana-Mystery.postman_collection.json added under src to test APIs on postman
+
   Tests:
   ------
   npm test -> Validates all endpoints using Jest & Supertest
